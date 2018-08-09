@@ -414,3 +414,4 @@ client.on('voiceStateUpdate', (oldM, newM) => {
   })
 });
 
+client.login(process.env.BOT_TOKEN);
