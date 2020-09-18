@@ -29,7 +29,7 @@ client.on('message', message=>
 
 client.on('message', message=>
 {
-  var channelid = message.guild.channels.find('name','sug')
+  var channelid = message.guild.channels.find('name','𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡𝗦')
   var prefix = '!'
   var args = message.content.split(' ').slice('1').join(' ');
   if(message.content.startsWith(prefix + 'sug'))
