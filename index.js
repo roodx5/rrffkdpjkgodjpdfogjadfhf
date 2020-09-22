@@ -48,9 +48,30 @@ client.on('message', message=>
 
 client.on('ready', ()=>
 {
-  client.user.setGame('!sug ل الاقتراحات !req ل الطلبات الاكواد المنشوره ', 'playing');
+  client.user.setGame('!-help|roodx shop');
   
 })
+
+
+
+
+client.on('message', roodx=>
+{ 
+  var prefix = '!-'
+  if(roodx.content.startsWith(prefix +'help'))
+  {
+   var embed = new Discord.RichEmbed()
+   .setTitle(' /<a:hfghgf:465846123744067584> قائمه الاوامر')
+   .setDescription('!sug ل الاقتراحات ')
+.addField('**!req ل طلب اكواد الموجود وا المعلنه عنها**'
+,`${roodx.author.username}`)
+.setThumbnail(`${roodx.author.avatarURL}`)
+.setColor('RANDOM');
+roodx.channel.sendEmbed(embed)
+   
+  }
+})
+
 
 
 client.login(process.env.BOT_TOKEN);
