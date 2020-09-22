@@ -46,7 +46,11 @@ client.on('message', message=>
   }
 })
 
-
+client.on('ready', ()=>
+{
+  client.user.setGame('!sug ل الاقتراحات !req ل الطلبات الاكواد المنشوره ', 'playing');
+  
+})
 
 
 client.login(process.env.BOT_TOKEN);
