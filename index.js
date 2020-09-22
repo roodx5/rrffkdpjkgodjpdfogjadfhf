@@ -61,7 +61,7 @@ client.on('message', roodx=>
   if(roodx.content.startsWith(prefix +'help'))
   {
    var embed = new Discord.RichEmbed()
-   .setTitle(' /<a:hfghgf:465846123744067584> قائمه الاوامر')
+   .setTitle(' <a:hfghgf:465846123744067584> قائمه الاوامر')
    .setDescription('!sug ل الاقتراحات ')
 .addField('**!req ل طلب اكواد الموجود وا المعلنه عنها**'
 ,`${roodx.author.username}`)
