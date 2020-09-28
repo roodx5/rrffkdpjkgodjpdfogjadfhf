@@ -12,7 +12,7 @@ client.on('message', message=>
   var channelid = message.guild.channels.find('name','orders')
   var prefix = '!'
   var args = message.content.split(' ').slice('1').join(' ');
-  if(message.content.startsWith(prefix + 'req'))
+  if(message.content.startsWith(prefix + 'order'))
   {
     var embed = new Discord.RichEmbed()
     .setTitle(`طلب جديد من : ${message.author.username}`)
@@ -29,7 +29,7 @@ client.on('message', message=>
 
 client.on('message', message=>
 {
-  var channelid = message.guild.channels.find('name','𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡𝗦')
+  var channelid = message.guild.channels.find('name','»「الاقتراحات」')
   var prefix = '!'
   var args = message.content.split(' ').slice('1').join(' ');
   if(message.content.startsWith(prefix + 'sug'))
@@ -48,7 +48,7 @@ client.on('message', message=>
 
 client.on('ready', ()=>
 {
-  client.user.setGame('!-help|roodx shop');
+  client.user.setGame('!-help|OTTAWA S');
   
 })
 
@@ -63,7 +63,7 @@ client.on('message', roodx=>
    var embed = new Discord.RichEmbed()
    .setTitle(' <a:hfghgf:465846123744067584> قائمه الاوامر')
    .setDescription('!sug ل الاقتراحات ')
-.addField('**!req ل طلب اكواد الموجود وا المعلنه عنها**'
+.addField('**!order ل طلب اكواد الموجود وا المعلنه عنها**'
 ,`${roodx.author.username}`)
 .setThumbnail(`${roodx.author.avatarURL}`)
 .setColor('RANDOM');
