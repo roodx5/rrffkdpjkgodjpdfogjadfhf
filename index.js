@@ -1,3 +1,6 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
 console.log('OTTAWA BOT IS ONLINE ')
 
 client.on('ready', () => {
@@ -104,3 +107,6 @@ client.on('message', roodx=>
 
   }
 })
+
+
+client.login(process.env.BOT_TOKEN);
