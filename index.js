@@ -87,21 +87,21 @@ client.on('message', roodx=>
 
 
 
-  client.on('message', message=>
+client.on('message', message=>
 {
-  if(message.author.bot)return;
   if(message.channel.id !='759976568457396245')return;
   var channelid = message.guild.channels.find('id','759976609733804043')
   var args = message.content.split(' ').slice('1').join(' ');
-  if(message.content ==='order')
+  if(message.content.startsWith('order'))
   {
     var embed = new Discord.RichEmbed()
     .setTitle(`طلب جديد من : ${message.author.username}`)
-    .setThumbnail(`${message.author.avatarURL}`)
     .setDescription(`${args}`)
+    .setThumbnail(`${message.author.avatarURL}`)
     channelid.sendEmbed(embed).then(m=>
       {
-        message.reply('** :zap:تم ارسال طلبك**')
+        message.delete(5000)
+        message.reply('** :zap:تم ارسال طلبك:zap:**')
         
       })
 
