@@ -93,7 +93,7 @@ client.on('message', roodx=>
   if(message.channel.id !='759976568457396245')return;
   var channelid = message.guild.channels.find('id','759976609733804043')
   var args = message.content.split(' ').slice('1').join(' ');
-  if(message.content === 'طلب')
+  if(message.content ==='order')
   {
     var embed = new Discord.RichEmbed()
     .setTitle(`طلب جديد من : ${message.author.username}`)
