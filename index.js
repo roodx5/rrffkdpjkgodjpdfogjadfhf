@@ -1,77 +1,106 @@
-//✠▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ☢❦۞❦☢ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬✠//BY: POULAZ (Angry Black)
+console.log('OTTAWA BOT IS ONLINE ')
 
-const Discord = require("discord.js");
-const cmd = require("node-cmd")
-const client = new Discord.Client();
+client.on('ready', () => {
+  client.user.setPresence({
+      game: {
+          name: `OTTAWA SHOP`,
+          type: 0
+          
+      }
+  });
+});
 
 
 
 
-client.on('message', message=>
+
+
+
+
+
+
+
+
+//===================================================================//
+client.on('message', roodx=>
 {
-  var channelid = message.guild.channels.find('name','orders')
-  var prefix = '!'
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759974848989495367')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  
+//===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972246541303839')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  //===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972325596069898')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+
+  //===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972379660124160')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  //===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972405711339550')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  //===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972459100766238')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  //===================================================================//
+client.on('message', roodx=>
+{
+  if(roodx.author.bot)return;
+  if(roodx.channel.id != '759972616659796009')return;
+  if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+})
+  
+  //===================================================================//
+  client.on('message', roodx=>
+  {
+    if(roodx.author.bot)return;
+    if(roodx.channel.id != '759972662213607484')return;
+    if(roodx){roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')}
+  })
+
+
+
+
+  client.on('message', message=>
+{
+  if(message.author.bot)return;
+  if(message.channel.id !='759976568457396245')return;
+  var channelid = message.guild.channels.find('id','759976609733804043')
   var args = message.content.split(' ').slice('1').join(' ');
-  if(message.content.startsWith(prefix + 'order'))
+  if(message.content === 'طلب')
   {
     var embed = new Discord.RichEmbed()
     .setTitle(`طلب جديد من : ${message.author.username}`)
+    .setThumbnail(`${message.author.avatarURL}`)
     .setDescription(`${args}`)
     channelid.sendEmbed(embed).then(m=>
       {
-        message.reply('** <a:3307_verif_red:756279703266132078> تم ارسال طلبك انتظر حتا نرد عليك**')
+        message.reply('** :zap:تم ارسال طلبك**')
         
       })
 
   }
 })
-
-
-client.on('message', message=>
-{
-  var channelid = message.guild.channels.find('name','»「الاقتراحات」')
-  var prefix = '!'
-  var args = message.content.split(' ').slice('1').join(' ');
-  if(message.content.startsWith(prefix + 'sug'))
-  {
-    var embed = new Discord.RichEmbed()
-    .setTitle(`اقتراح  جديد من : ${message.author.username}`)
-    .setDescription(`${args}`)
-    channelid.sendEmbed(embed).then(m=>
-      {
-        message.reply('** <a:3307_verif_red:756279703266132078> تم ارسال اقتراحك بنجاح**')
-        
-      })
-
-  }
-})
-
-client.on('ready', ()=>
-{
-  client.user.setGame('!-help|OTTAWA S');
-  
-})
-
-
-
-
-client.on('message', roodx=>
-{ 
-  var prefix = '!-'
-  if(roodx.content.startsWith(prefix +'help'))
-  {
-   var embed = new Discord.RichEmbed()
-   .setTitle(' <a:hfghgf:465846123744067584> قائمه الاوامر')
-   .setDescription('!sug ل الاقتراحات ')
-.addField('**!order ل طلب اكواد الموجود وا المعلنه عنها**'
-,`${roodx.author.username}`)
-.setThumbnail(`${roodx.author.avatarURL}`)
-.setColor('RANDOM');
-roodx.channel.sendEmbed(embed)
-   
-  }
-})
-
-
-
-client.login(process.env.BOT_TOKEN);
