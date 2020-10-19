@@ -160,7 +160,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "10");
+        let role = message.guild.roles.find(r => r.name === "☢ | Professional support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.JS");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -177,7 +179,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "15");
+        let role = message.guild.roles.find(r => r.name === "☢ | Good support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.JS");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -194,7 +198,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "19");
+        let role = message.guild.roles.find(r => r.name === "☢ | New support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.JS");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -320,7 +326,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "10");
+        let role = message.guild.roles.find(r => r.name === "☢ | Professional support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷┃CODER.PY");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -337,7 +345,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "20");
+        let role = message.guild.roles.find(r => r.name === "☢ | Good support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷┃CODER.PY");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -354,7 +364,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "20");
+        let role = message.guild.roles.find(r => r.name === "☢ | New support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷┃CODER.PY");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -476,7 +488,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "10");
+        let role = message.guild.roles.find(r => r.name === "☢ | Professional support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.WEB");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -493,7 +507,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "20");
+        let role = message.guild.roles.find(r => r.name === "☢ | Good support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.WEB");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -501,7 +517,7 @@ client.on('message', message=>
     }
 })
 //
-//easy python
+//easy WEB
 client.on('message', message=>
 {
    
@@ -510,7 +526,9 @@ client.on('message', message=>
         if(!message.guild)return
 
         message.delete();
-        let role = message.guild.roles.find(r => r.name === "20");
+        let role = message.guild.roles.find(r => r.name === "☢ | New support");
+        message.member.addRole(role)
+        let role = message.guild.roles.find(r => r.name === "≶ ≷ | CODER.WEB");
         message.member.addRole(role)
         message.reply('**تم قبولك بنجاح:white_check_mark: **')
             
@@ -523,6 +541,14 @@ client.on('message', message=>
 
 
 
+
+
+
+
+
+
+
+client.login('NDg2OTQ0ODcxOTE2MTA5ODI0.W5AMwA.ESmgmJFYNudmesqFxcVosEemIcg');
 
 
 client.login(process.env.BOT_TOKEN);
