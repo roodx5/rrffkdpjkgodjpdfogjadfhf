@@ -1,3 +1,7 @@
+const discord = require("discord.js");
+const client = new discord.Client();
+
+
 client.on('message' , roodx=>{  
 
     if(roodx.author.bot)return;
