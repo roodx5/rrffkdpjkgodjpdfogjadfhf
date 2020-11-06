@@ -8,7 +8,7 @@ client.on('message' , roodx=>{
     if(roodx.channel.id !== '774249845925347328') return;
     if(roodx)
     {
-        roodx.channel.send('https://media.discordapp.net/attachments/742441164459999233/759145606525878333/42_E25EB2C.gif')
+        roodx.channel.send('https://media.discordapp.net/attachments/754398470558842930/759303476885979146/42_E25EB2C.gif')
     }
 })
 
